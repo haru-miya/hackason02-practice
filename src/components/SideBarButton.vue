@@ -16,6 +16,10 @@ defineProps<{
   flex-direction: column;
   justify-content: center;
 }
+.container:hover {
+  background-color: rgb(200, 200, 200);
+  cursor: pointer;
+}
 .buttontext {
   align-self: center;
   text-align: center;

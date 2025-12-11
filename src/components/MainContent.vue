@@ -1,11 +1,25 @@
 <script setup lang="ts">
-    
+defineProps<{
+  title: string
+}>()
+const msg = (a: string) => {
+  return `${a} `.repeat(30).trim()
+}
 </script>
 
 <template>
-    <h1>Main Content Area</h1>
+  <div :class="$style.container">
+    <h1>Title</h1>
+    <p>{{ msg(title) }}</p>
+  </div>
 </template>
 
-<style scoped>
-
+<style module>
+.container {
+  width: 1000px;
+  height: 100vh;
+  border: 1px dotted red;
+  margin: auto;
+  padding-top: 120px;
+}
 </style>

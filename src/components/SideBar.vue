@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import SideBarButton from './SideBarButton.vue'
+const fruit = defineModel<string>('fruit')
 </script>
 
 <template>
   <div :class="$style.container">
-    <SideBarButton title="Apple" />
-    <SideBarButton title="Banana" />
-    <SideBarButton title="Orange" />
-    <SideBarButton title="Lemon" />
+    <SideBarButton title="Apple" @click="fruit = 'Apple'" />
+    <SideBarButton title="Banana" @click="fruit = 'Banana'" />
+    <SideBarButton title="Orange" @click="fruit = 'Orange'" />
+    <SideBarButton title="Lemon" @click="fruit = 'Lemon'" />
   </div>
 </template>
 

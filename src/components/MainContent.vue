@@ -25,7 +25,6 @@ const msg = (a: string) => {
 .container {
   width: 1000px;
   height: 100vh;
-  border: 1px dotted red;
   margin: auto;
   padding-top: 120px;
 }

@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+  title: string
+}>()
+</script>
 <template>
   <div :class="$style.container">
-    <div :class="$style.buttontext">Apple</div>
+    <div :class="$style.buttontext">{{ title }}</div>
   </div>
 </template>
 <style module>

@@ -4,10 +4,10 @@ import SideBarButton from './SideBarButton.vue'
 
 <template>
   <div :class="$style.container">
-    <SideBarButton />
-    <SideBarButton />
-    <SideBarButton />
-    <SideBarButton />
+    <SideBarButton title="Apple" />
+    <SideBarButton title="Banana" />
+    <SideBarButton title="Orange" />
+    <SideBarButton title="Lemon" />
   </div>
 </template>
 

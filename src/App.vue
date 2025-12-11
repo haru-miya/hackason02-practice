@@ -4,13 +4,13 @@ import SideBar from './components/SideBar.vue'
 </script>
 
 <template>
-  <main class="container">
+  <main :class="$style.container">
     <SideBar />
     <MainContent />
   </main>
 </template>
 
-<style scoped>
+<style module>
 .container {
   height: 100vh;
   display: flex;

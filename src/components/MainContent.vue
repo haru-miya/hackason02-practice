@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import MainContenBox from './MainContenBox.vue'
+
 defineProps<{
   title: string
 }>()
@@ -11,6 +13,11 @@ const msg = (a: string) => {
   <div :class="$style.container">
     <h1>Title</h1>
     <p>{{ msg(title) }}</p>
+    <div :class="$style.contentBox">
+      <MainContenBox color="red" />
+      <MainContenBox color="lime" />
+      <MainContenBox color="blue" />
+    </div>
   </div>
 </template>
 
@@ -21,5 +28,11 @@ const msg = (a: string) => {
   border: 1px dotted red;
   margin: auto;
   padding-top: 120px;
+}
+.contentBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 </style>
